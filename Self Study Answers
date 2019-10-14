@@ -1,0 +1,20 @@
+## Self-Study Questions
+
+Demonstrate your understanding of this week's concepts by answering the following free-form questions.
+
+Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
+
+1. What is the DOM?
+    The DOM is a representation of HTML that allows us to manipulate wepages using a language similar to JS. 
+
+2. What is an event?
+    DOM Events are coded actions that take place on a webpage as a result of the action of the user. 
+
+3. What is an event listener?
+    Event listeners are callback functions that execute a particular function when the condisiton that they are "listening" for has been satisfied. 
+
+4. Why would we convert a NodeList into an Array?
+    Nodeslists aren't very mutable so we'd need to convert the nodelist into an Arry in situations when we need to manipulate data in ways that can only be accomplished by using array methods.
+
+5. What is a component?
+    Componets are modular sets of functions that contain HTML,CSS, and JS that can be reused and scaled to larger data sets
