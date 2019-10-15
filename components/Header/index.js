@@ -10,21 +10,33 @@
 // And add it to the DOM in the .header-container component
 
 
-const headerCreator = document.querySelector('.header')
+const headerContainer = document.querySelector('.header-container')
 
 
-function headerCreator(title, link){
+function headerCreator(){
     const headerElement = document.createElement('div');
     const dateElement = document.createElement('span');
     const titleElement = document.createElement('h1');
     const tempElement = document.createElement('span');
-
+    
+    headerElement.classList.add('header');
+    dateElement.classList.add('date');
+    tempElement.classList.add('temp');
+    
+    
+    dateElement.textContent = 'MARCH 28, 2019';
+    titleElement.textContent = "Lambda Times"
+    tempElement.textContent = '98°';
+    
     headerElement.appendChild(dateElement);
     headerElement.appendChild(titleElement);
     headerElement.appendChild(tempElement);
 
-    dateElement.textContent = headerCreator.date;
-    titleElement.textContent = headerCreator.titleElement;
-    tempElement.textContent = headerCreator.temp;
+    headerContainer.appendChild(headerElement)
 
-    }
+}
+
+headerCreator();
+
+
+
